@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agergar Comida</title>
+
+</head>
+<body>
+	<form method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		
+		<p>
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nombre">
+		</p>
+		<p>
+			<label for="imagen">Foto</label>
+			<input type="file" id="imagen" name="imagen">
+		</p>
+		<p>
+			<label for="calorias">Calorias</label>
+			<input type="number" id="calorias" name="calorias">
+		</p>
+		<p>
+			<label for="carbohidratos">Carbohidratos</label>
+			<input type="number" id="carbohidratos" name="carbohidratos">
+		</p>
+		<p>
+			<label for="proteinas">Proteinas</label>
+			<input type="number" id="proteinas" name="proteinas">
+		</p>
+		<p>
+			<label for="proteinas">Descripcion</label>
+			<textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+		</p>
+		<p>
+			<label for="proteinas">Receta</label>
+			<textarea name="receta" id="receta" cols="30" rows="10"></textarea>
+		</p>
+
+		<input type="submit" value="Agregar Comida">
+	</form>
+
+</body>
+</html>
+
